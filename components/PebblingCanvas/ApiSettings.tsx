@@ -42,7 +42,7 @@ const ApiSettings: React.FC<ApiSettingsProps> = ({ isOpen, onClose }) => {
     enabled: true,
     baseUrl: 'https://ai.t8star.cn',
     apiKey: '',
-    model: 'nano-banana-2',
+    model: 'nano-bananao-pro',
     chatModel: 'gemini-2.5-pro'
   });
   
@@ -194,7 +194,7 @@ const ApiSettings: React.FC<ApiSettingsProps> = ({ isOpen, onClose }) => {
                 <div>
                   <label className="block text-sm text-white/70 mb-2">图像模型</label>
                   <select value={config.model} onChange={(e) => setConfig({ ...config, model: e.target.value })} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 appearance-none cursor-pointer">
-                    <option value="nano-banana-2">nano-banana-2</option>
+                    <option value="nano-bananao-pro">nano-bananao-pro</option>
                     <option value="gpt-image-1">gpt-image-1</option>
                     <option value="dall-e-3">dall-e-3</option>
                   </select>

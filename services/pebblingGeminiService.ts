@@ -15,7 +15,7 @@ const DEFAULT_CONFIG: ThirdPartyApiConfig = {
   enabled: true,
   baseUrl: 'https://ai.t8star.cn',
   apiKey: '',
-  model: 'nano-banana-2',
+  model: 'nano-bananao-pro',
   chatModel: 'gemini-2.5-pro'
 };
 
