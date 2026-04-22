@@ -729,7 +729,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 className="text-xs font-medium px-3 py-1.5 rounded-lg"
                 style={{ background: 'rgba(59, 130, 246, 0.15)', color: styles.primaryLight, border: '1px solid rgba(59, 130, 246, 0.25)' }}
               >
-                {activeMode === 'local-thirdparty' ? thirdPartyConfig.model || 'nano-banana-2' : 'Gemini 3 Pro'}
+                {activeMode === 'local-thirdparty' ? thirdPartyConfig.model || 'gemini-3.1-flash-image-preview' : 'Gemini 3 Pro'}
               </span>
             </div>
 

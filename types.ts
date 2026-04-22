@@ -201,7 +201,7 @@ export interface ThirdPartyApiConfig {
   enabled: boolean;
   baseUrl: string;
   apiKey: string;
-  model: string; // 图片生成模型，默认使用 nano-banana-2
+  model: string; // 图片生成模型，默认使用 gemini-3.1-flash-image-preview
   chatModel?: string; // 分析模型，用于BP智能体和Smart模式，如 gemini-2.5-pro
 }
 

@@ -147,7 +147,7 @@ export const editImageWithThirdPartyApi = async (
   
   // 构建请求体 - Auto+图生图时完全不包含 aspect_ratio 字段
   const requestBody: NanoBananaRequest = {
-    model: thirdPartyConfig.model || 'nano-banana-2',
+    model: thirdPartyConfig.model || 'gemini-3.1-flash-image-preview',
     prompt: prompt,
     response_format: 'url',
     image_size: config.imageSize as '1K' | '2K' | '4K',
