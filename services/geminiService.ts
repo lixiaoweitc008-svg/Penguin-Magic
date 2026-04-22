@@ -267,8 +267,8 @@ export const chatWithThirdPartyApi = async (
     userContent = userMessage;
   }
   
-  // 使用配置的chatModel，默认使用 gemini-2.5-pro
-  const chatModel = thirdPartyConfig.chatModel || 'gemini-2.5-pro';
+  // 使用配置的chatModel，默认使用 gemini-3.1-flash-image-preview
+  const chatModel = thirdPartyConfig.chatModel || 'gemini-3.1-flash-image-preview';
   
   const requestBody: OpenAIChatRequest = {
     model: chatModel,

@@ -16,7 +16,7 @@ const DEFAULT_CONFIG: ThirdPartyApiConfig = {
   baseUrl: 'https://ai.t8star.cn',
   apiKey: '',
   model: 'gemini-3.1-flash-image-preview',
-  chatModel: 'gemini-2.5-pro'
+  chatModel: 'gemini-3.1-flash-image-preview'
 };
 
 // 获取配置

@@ -22,7 +22,7 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({
   // 贞贞API配置输入
   const [tpBaseUrl, setTpBaseUrl] = useState(thirdPartyConfig.baseUrl || 'https://ai.t8star.cn');
   const [tpApiKey, setTpApiKey] = useState('');
-  const [tpChatModel, setTpChatModel] = useState(thirdPartyConfig.chatModel || 'gemini-2.5-pro');
+  const [tpChatModel, setTpChatModel] = useState(thirdPartyConfig.chatModel || 'gemini-3.1-flash-image-preview');
   const [isTpKeySet, setIsTpKeySet] = useState(false);
   const [balanceInfo, setBalanceInfo] = useState<string | null>(null);
   const [isCheckingBalance, setIsCheckingBalance] = useState(false);
@@ -39,7 +39,7 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({
   
   useEffect(() => {
     setTpBaseUrl(thirdPartyConfig.baseUrl);
-    setTpChatModel(thirdPartyConfig.chatModel || 'gemini-2.5-pro');
+    setTpChatModel(thirdPartyConfig.chatModel || 'gemini-3.1-flash-image-preview');
     setIsTpKeySet(!!thirdPartyConfig.apiKey);
   }, [thirdPartyConfig]);
   
@@ -98,7 +98,7 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({
       baseUrl: tpBaseUrl.trim(),
       apiKey: tpApiKey.trim() || thirdPartyConfig.apiKey,
       model: 'gemini-3.1-flash-image-preview',
-      chatModel: tpChatModel.trim() || 'gemini-2.5-pro'
+      chatModel: tpChatModel.trim() || 'gemini-3.1-flash-image-preview'
     };
     onThirdPartyConfigChange(newConfig);
     setTpApiKey('');
@@ -237,7 +237,7 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({
               type="text"
               value={tpChatModel}
               onChange={(e) => setTpChatModel(e.target.value)}
-              placeholder="gemini-2.5-pro"
+              placeholder="gemini-3.1-flash-image-preview"
               className="w-full p-2 bg-gray-900/80 border border-gray-600 rounded-md text-xs focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
             />
           </div>

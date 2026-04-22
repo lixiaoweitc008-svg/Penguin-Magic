@@ -34,7 +34,7 @@ const response = await fetch(`${API_BASE_URL}/v1/chat/completions`, {
   method: 'POST',
   headers,
   body: JSON.stringify({
-    model: 'gemini-2.5-pro',  // 或其他支持的模型
+    model: 'gemini-3.1-flash-image-preview',  // 或其他支持的模型
     messages: [
       { role: 'system', content: '你是一个有帮助的助手' },
       { role: 'user', content: '你好' }
@@ -57,7 +57,7 @@ const response = await fetch(`${API_BASE_URL}/v1/chat/completions`, {
   method: 'POST',
   headers,
   body: JSON.stringify({
-    model: 'gemini-2.5-pro',
+    model: 'gemini-3.1-flash-image-preview',
     messages: [
       { role: 'system', content: '你是图片分析专家' },
       { 

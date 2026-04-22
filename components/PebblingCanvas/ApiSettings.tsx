@@ -43,7 +43,7 @@ const ApiSettings: React.FC<ApiSettingsProps> = ({ isOpen, onClose }) => {
     baseUrl: 'https://ai.t8star.cn',
     apiKey: '',
     model: 'gemini-3.1-flash-image-preview',
-    chatModel: 'gemini-2.5-pro'
+    chatModel: 'gemini-3.1-flash-image-preview'
   });
   
   const [soraConfig, setSoraConfig] = useState<SoraConfig>({
@@ -202,7 +202,7 @@ const ApiSettings: React.FC<ApiSettingsProps> = ({ isOpen, onClose }) => {
                 <div>
                   <label className="block text-sm text-white/70 mb-2">文本模型</label>
                   <select value={config.chatModel} onChange={(e) => setConfig({ ...config, chatModel: e.target.value })} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 appearance-none cursor-pointer">
-                    <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+                    <option value="gemini-3.1-flash-image-preview">gemini-3.1-flash-image-preview</option>
                     <option value="gemini-2.5-flash">gemini-2.5-flash</option>
                     <option value="gpt-4o">gpt-4o</option>
                     <option value="claude-sonnet-4-20250514">claude-sonnet-4</option>

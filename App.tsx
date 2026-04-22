@@ -1836,7 +1836,7 @@ const App: React.FC = () => {
           config.model = 'gemini-3.1-flash-image-preview';
         }
         if (!config.chatModel) {
-          config.chatModel = 'gemini-2.5-pro';
+          config.chatModel = 'gemini-3.1-flash-image-preview';
         }
         setThirdPartyApiConfig(config);
         setThirdPartyConfig(config);
@@ -1850,7 +1850,7 @@ const App: React.FC = () => {
         baseUrl: 'https://ai.t8star.cn',
         apiKey: '',
         model: 'gemini-3.1-flash-image-preview',
-        chatModel: 'gemini-2.5-pro'
+        chatModel: 'gemini-3.1-flash-image-preview'
       };
       setThirdPartyApiConfig(defaultConfig);
       setThirdPartyConfig(defaultConfig);

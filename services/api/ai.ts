@@ -42,7 +42,7 @@ export const analyzeImage = async (
   imageBase64: string,
   systemInstruction: string,
   userMessage: string,
-  model: string = 'gemini-2.5-pro'
+  model: string = 'gemini-3.1-flash-image-preview'
 ): Promise<{ success: boolean; data?: string; error?: string }> => {
   const request: OpenAIChatRequest = {
     model,
