@@ -387,7 +387,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 </div>
                 <div className="flex-1">
                   <div className="text-sm font-semibold" style={{ color: styles.textPrimary }}>贞贞 API</div>
-                  <div className="text-xs" style={{ color: styles.textSecondary }}>支持 nano-banana 等模型</div>
+                  <div className="text-xs" style={{ color: styles.textSecondary }}>支持 gemini-3.1-flash-image-preview 等模型</div>
                 </div>
                 <div 
                   className="option-check"

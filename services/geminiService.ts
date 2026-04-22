@@ -667,7 +667,7 @@ export const generateCreativePromptFromImage = async ({
     throw new Error("请先设置 Gemini API Key 或配置贞贞API");
   }
   
-  const model = 'gemini-3-pro-preview';
+  const model = 'gemini-3.1-flash-image-preview';
 
   if (!file) throw new Error("请上传图片");
 

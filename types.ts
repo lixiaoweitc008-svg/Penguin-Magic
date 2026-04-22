@@ -25,7 +25,7 @@ export type SmartPlusConfig = SmartPlusComponent[];
 
 export type BPFieldType = 'input' | 'agent';
 
-export type BPAgentModel = 'gemini-2.5-flash' | 'gemini-3-pro-preview';
+export type BPAgentModel = 'gemini-3.1-flash-image-preview' | 'gemini-3.1-flash-image-preview';
 
 export interface BPField {
   id: string;

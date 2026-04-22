@@ -202,7 +202,7 @@ export const AddCreativeIdeaModal: React.FC<AddCreativeIdeaModalProps> = ({ isOp
           label: type === 'input' ? `变量${count}` : `智能体${count}`,
           agentConfig: type === 'agent' ? {
               instruction: "分析图片中的...",
-              model: 'gemini-2.5-flash'
+              model: 'gemini-3.1-flash-image-preview'
           } : undefined
       };
       setBpFields([...bpFields, newField]);
