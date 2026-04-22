@@ -97,7 +97,7 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({
       ...thirdPartyConfig,
       baseUrl: tpBaseUrl.trim(),
       apiKey: tpApiKey.trim() || thirdPartyConfig.apiKey,
-      model: 'nano-banana-2',
+      model: 'gemini-3.1-flash-image-preview',
       chatModel: tpChatModel.trim() || 'gemini-2.5-pro'
     };
     onThirdPartyConfigChange(newConfig);
@@ -279,7 +279,7 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({
           )}
           
           <p className="text-[10px] text-gray-500 leading-relaxed">
-            图片生成使用 nano-banana-2，BP智能体使用分析模型进行图片理解。
+            图片生成使用 gemini-3.1-flash-image-preview，BP智能体使用分析模型进行图片理解。
           </p>
           
           {/* 获取API链接 */}

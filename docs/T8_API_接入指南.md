@@ -112,7 +112,7 @@ const response = await fetch(`${API_BASE_URL}/v1/chat/completions`, {
 
 ```typescript
 interface ImageRequest {
-  model: 'nano-banana-2';           // 模型名称
+  model: 'gemini-3.1-flash-image-preview';           // 模型名称
   prompt: string;                    // 提示词
   image?: string | string[];         // 图生图：base64 或 URL（可选）
   aspect_ratio?: '4:3' | '3:4' | '16:9' | '9:16' | '1:1' | '2:3' | '3:2';
@@ -126,7 +126,7 @@ const response = await fetch(`${API_BASE_URL}/v1/images/generations`, {
   method: 'POST',
   headers,
   body: JSON.stringify({
-    model: 'nano-banana-2',
+    model: 'gemini-3.1-flash-image-preview',
     prompt: '一只可爱的猫咪',
     aspect_ratio: '1:1',
     image_size: '2K',
@@ -139,7 +139,7 @@ const response = await fetch(`${API_BASE_URL}/v1/images/generations`, {
   method: 'POST',
   headers,
   body: JSON.stringify({
-    model: 'nano-banana-2',
+    model: 'gemini-3.1-flash-image-preview',
     prompt: '将图片风格转换为油画',
     image: 'data:image/png;base64,xxxxx',  // 或图片URL
     image_size: '2K',

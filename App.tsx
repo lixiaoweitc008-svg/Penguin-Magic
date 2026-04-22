@@ -1780,7 +1780,7 @@ const App: React.FC = () => {
     enabled: false,
     baseUrl: '',
     apiKey: '',
-    model: 'nano-banana-2'
+    model: 'gemini-3.1-flash-image-preview'
   });
   
   // 历史记录状态
@@ -1833,7 +1833,7 @@ const App: React.FC = () => {
           config.baseUrl = 'https://ai.t8star.cn';
         }
         if (!config.model) {
-          config.model = 'nano-banana-2';
+          config.model = 'gemini-3.1-flash-image-preview';
         }
         if (!config.chatModel) {
           config.chatModel = 'gemini-2.5-pro';
@@ -1849,7 +1849,7 @@ const App: React.FC = () => {
         enabled: false,
         baseUrl: 'https://ai.t8star.cn',
         apiKey: '',
-        model: 'nano-banana-2',
+        model: 'gemini-3.1-flash-image-preview',
         chatModel: 'gemini-2.5-pro'
       };
       setThirdPartyApiConfig(defaultConfig);
@@ -2288,7 +2288,7 @@ const App: React.FC = () => {
       imageUrl: localImageUrl, // 使用本地URL
       prompt: promptText,
       timestamp: Date.now(),
-      model: isThirdParty ? (thirdPartyApiConfig.model || 'nano-banana-2') : 'Gemini 3 Pro',
+      model: isThirdParty ? (thirdPartyApiConfig.model || 'gemini-3.1-flash-image-preview') : 'Gemini 3 Pro',
       isThirdParty,
       // 输入图片使用本地路径，不存base64
       inputImagePaths,
@@ -3229,7 +3229,7 @@ const App: React.FC = () => {
           updatedAt: Date.now(),
           imageUrl: '', // 空的，等待填充
           prompt: promptToSave,
-          model: thirdPartyApiConfig.enabled ? 'nano-banana-2' : 'Gemini',
+          model: thirdPartyApiConfig.enabled ? 'gemini-3.1-flash-image-preview' : 'Gemini',
           isThirdParty: thirdPartyApiConfig.enabled,
           isLoading: true, // 标记为加载中
         };
@@ -3345,7 +3345,7 @@ const App: React.FC = () => {
       updatedAt: Date.now(),
       imageUrl: '', // 空的，等待填充
       prompt: promptToSave,
-      model: thirdPartyApiConfig.enabled ? 'nano-banana-2' : 'Gemini',
+      model: thirdPartyApiConfig.enabled ? 'gemini-3.1-flash-image-preview' : 'Gemini',
       isThirdParty: thirdPartyApiConfig.enabled,
       isLoading: true, // 标记为加载中
     };
